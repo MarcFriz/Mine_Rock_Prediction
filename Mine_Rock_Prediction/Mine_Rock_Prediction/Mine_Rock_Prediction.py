@@ -2,12 +2,14 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import os
 from sklearn.preprocessing import LabelEncoder
 from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 
 def read_dataset():
-    df = pd.read_csv("C:\\tmp\\graph\\WriteLines.csv")
+    cwd = os.getcwd()
+    df = pd.read_csv(cwd + "\\dataset\\dataset.csv")
     X = df[df.columns[0:60]].values
     y = df[df.columns[60]]
 
