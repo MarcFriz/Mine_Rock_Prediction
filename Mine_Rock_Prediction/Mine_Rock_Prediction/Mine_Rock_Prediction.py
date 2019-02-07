@@ -120,12 +120,12 @@ def pred():
     print('##########################################')
     print('0 = Mine & 1 = Rock')
     print('##########################################')
-    for i in range(0, 1):
+    for i in range(200, 201):
         prediction_run = sess.run(prediction, feed_dict={x:X[i].reshape(1,60)})
         #accuracy_run = sess.run(accuracy, feed_dict={x:X[i].reshape(1,60), y_:Y[i].reshape(1,2)})
         #print("pred: ", prediction_run, " original: ", Y[i], " acc: ", accuracy_run)
         print("Datensatz: ", X[i])        
-        print("pred: ", prediction_run, " original: ", Y[i])
+        print("pred: ", prediction_run, " original: ", Y[i][1])
     #end
 
 
