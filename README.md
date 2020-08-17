@@ -3,6 +3,9 @@
 ## Overview
 This code will help you train and run an AI model. Based on a dataset with sensordata you can predict whether it is a Rock or a Mine.
 
+## Quick start
+You will finde the Notebook [here](https://github.com/MarcFriz/Mine_Rock_Prediction/blob/master/Mine_Rock_Prediction/Mine_Rock_Prediction/notebook/Mine_Rock_Notebook.ipynb)
+
 
 ## Dependencies
 - tensorflow
